@@ -1,0 +1,38 @@
+/*!
+ *  \file eprofile.h
+ *
+ *  \brief This is the main include file of the eProfile application
+ *  \author Stefano Takekawa s.takekawa_at_gmail.com
+ *  \date 2017
+ *  \copyright Apache Licence 2.0
+ */
+
+
+#ifndef EPROFILE_H
+#define EPROFILE_H
+
+
+/*                                                                            */
+/* definition of version stuff                                                */
+/*                                                                            */
+
+
+#define EPROFILE_LIBRARY_VERSION_STRING                 "@PROJECT_BASEVERSION@"
+#define EPROFILE_LIBRARY_VERSION_MAJOR                  @PROJECT_BASEVERSION_MAJOR@
+#define EPROFILE_LIBRARY_VERSION_MINOR                  @PROJECT_BASEVERSION_MINOR@
+#define EPROFILE_LIBRARY_VERSION_PATCH                  @PROJECT_BASEVERSION_PATCH@
+#define EPROFILE_LIBRARY_VERSION                        (10000 * EPROFILE_LIBRARY_VERSION_MAJOR + \
+                                                         100 * EPROFILE_LIBRARY_VERSION_MINOR + \
+                                                         EPROFILE_LIBRARY_VERSION_PATCH )
+
+
+/*                                                                            */
+/* definitions                                                                */
+/*                                                                            */
+
+
+#define EPROFILE_APPLICATION_NAME                       "eProfile"
+#define EPROFILE_ORGANIZATION_NAME                      "eProfile"
+
+
+#endif // EPROFILE_H
