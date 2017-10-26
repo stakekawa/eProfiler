@@ -12,6 +12,8 @@
 #define EPROFILE_C_SETTINGS_H
 
 
+#include "two/defines.h"
+
 
 class C_Settings
 {
@@ -34,6 +36,16 @@ public:
      */
     void SaveSettings();
 
+    /*!
+     *  \brief Get the application font size
+     */
+    float GetFontSize() const;
+
+    /*!
+     *  \brief Set the application font size
+     */
+    void SetFontSize(const float p_fontSize);
+
 
 private:
 
@@ -48,6 +60,14 @@ private:
     ~C_Settings();
 
     static C_Settings* s_instance;
+
+    struct SettingsData_s;
+
+    SettingsData_s* m_data;
+
+    TWO_DISABLE_COPY(C_Settings)
+
+    TWO_DISABLE_MOVE(C_Settings)
 
 
 };

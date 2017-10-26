@@ -16,6 +16,10 @@
 #include "ui_c_mainwindow.h"
 
 
+class C_NumbersSelection;
+class C_NumbersSelector;
+
+
 class C_MainWindow_IMP : public QMainWindow
 {
     Q_OBJECT
@@ -30,12 +34,18 @@ public:
 
 protected:
 
-    void closeEvent(QCloseEvent* p_closeEvent) override;
+    void closeEvent(QCloseEvent* p_event) override;
+
+    void resizeEvent(QResizeEvent* p_event) override;
 
 
 private:
 
-    Ui::C_MainWindow* m_ui;
+    void DrawGeometry();
+
+    Ui::C_MainWindow*   m_ui;
+    C_NumbersSelector*  m_numbersSelector;
+    C_NumbersSelection* m_numbersSelection;
 
     Q_DISABLE_COPY(C_MainWindow_IMP)
 

@@ -35,4 +35,23 @@
 #define EPROFILE_ORGANIZATION_NAME                      "eProfile"
 
 
+/*                                                                            */
+/* definitions                                                                */
+/*                                                                            */
+
+
+static constexpr int   k_nLottoNumbers    =     90;
+static constexpr int   k_nSelectorRows    =     15;
+static constexpr int   k_nSelectorCols    =      6;
+
+static constexpr int   k_mainWindowWidth  = 1200.f;
+static constexpr int   k_mainWindowHeight =  900.f;
+static constexpr int   k_numberButtonSize =   45.f;
+static constexpr float k_leftPanelWidth   = k_nSelectorCols * k_numberButtonSize;;
+static constexpr float k_marginSmall      =    5.f;
+static constexpr float k_marginNormal     =   10.f;
+static constexpr float k_marginLarge      =   20.f;
+
+
+
 #endif // EPROFILE_H

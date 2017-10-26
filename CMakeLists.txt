@@ -87,6 +87,8 @@ find_package(Qt5Widgets)
 set(PROJECT_SOURCES ${PROJECT_SRC_DIR}/${PROJECT_BASENAME}.cpp
                     ${PROJECT_SRC_DIR}/c_charcombination.cpp
                     ${PROJECT_SRC_DIR}/c_mainwindow_imp.cpp
+                    ${PROJECT_SRC_DIR}/c_numbersselection.cpp
+                    ${PROJECT_SRC_DIR}/c_numbersselector.cpp
                     ${PROJECT_SRC_DIR}/c_settings.cpp)
 
 
@@ -94,6 +96,8 @@ set(PROJECT_SOURCES ${PROJECT_SRC_DIR}/${PROJECT_BASENAME}.cpp
 # headers
 #
 set(PROJECT_HEADERS ${PROJECT_INCLUDE_DIR}/c_mainwindow_imp.h
+                    ${PROJECT_INCLUDE_DIR}/c_numbersselection.h
+                    ${PROJECT_INCLUDE_DIR}/c_numbersselector.h
                     ${PROJECT_INCLUDE_DIR}/c_settings.h)
 
 
